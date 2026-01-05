@@ -18,9 +18,6 @@
     "bugs": {
         "url": "https://github.com/vankasteelj/trakt.tv/issues"
     },
-    "dependencies": {
-        "got": "11.8.6"
-    },
     "scripts": {
         "docs": "node docs/methods-generator"
     }
