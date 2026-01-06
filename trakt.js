@@ -24,7 +24,10 @@
 const got = async (req) => {
     const url = req.url
     delete req.url
-    return await fetch(url, req)
+    const res = await fetch(url, req)
+    return {
+        body: await res.text(),
+    }
 }
 
 const methods = require('./methods.json');
